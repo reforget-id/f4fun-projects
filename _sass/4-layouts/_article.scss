@@ -1,6 +1,9 @@
 .article {
   margin-bottom: 40px;
-  width: 50%;
+  
+  @media only screen and (min-width: $tablet) {
+    width: 50%; 
+  }
 
   .article__wrapper {
     display: flex;
@@ -94,39 +97,31 @@
   }
 
   @media only screen and (max-width: $tablet) {
-    .article {
-      width: 100%;
-      
-      .article__wrapper {
+    .article__wrapper {
         flex-direction: column;
       }
 
-      .article__image {
-        width: 100%;
-      }
+    .article__image {
+      width: 100%;
+    }
 
-      .article__content {
-        width: 90%;
-        padding: 20px;
-        margin: -10% 0 0 0;
-      }
+    .article__content {
+      width: 90%;
+      padding: 20px;
+      margin: -10% 0 0 0;
+    }
 
-      .article-without-image {
-        width: 90%;
-        margin: 0;
-      }
+    .article-without-image {
+      width: 90%;
+      margin: 0;
     }
   }
 
   @media only screen and (max-width: $mobile) {
-    .article {
-      width: 100%;
-      
-      .article__content {
+    .article__content {
 
-        .article__title {
-          font-size: 27px;
-        }
+      .article__title {
+        font-size: 27px;
       }
     }
   }
