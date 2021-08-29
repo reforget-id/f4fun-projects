@@ -73,7 +73,7 @@
     }
 
     .article__footer {
-      display: flex;
+      display: none;
       align-items: center;
 
       .read-more {
@@ -104,8 +104,8 @@
       }
 
     .article__image {
-      width: 90%;
-      height: 400px;
+      width: 70%;
+      height: 350px;
     }
 
     .article__content {
